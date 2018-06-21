@@ -1,0 +1,16 @@
+body
+{
+    background:url("/img/background.jpg");
+    background-size:cover;
+    color:darkslategrey;
+    font-family:"Agency FB";
+}
+
+h1{
+    font-size:8em;
+}
+
+p{
+    font-size:5em;
+    color:white;
+}

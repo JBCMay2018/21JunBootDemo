@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Song Info</title>
+</head>
+<body>
+    <p>Enter information about a song you like</p>
+    <form th:action="@{/addsong}" th:object="${aSong}" method="post">
+        <input type="hidden" th:field="*{id}">
+
+        <label for="name">Name:</label>
+        <input type="text" th:field="*{name}">
+
+        <label for="artist">Artist:</label>
+        <input type="text" th:field="*{artist}">
+
+        <input type="submit" value="Submit Song">
+
+    </form>
+
+</body>
+</html>
